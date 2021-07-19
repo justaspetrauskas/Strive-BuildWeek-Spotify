@@ -1,0 +1,27 @@
+/* .gog-sales-image {
+    max-height: 200px;
+    max-width: 140px;
+    overflow: hidden;
+  }
+   */
+
+   a.nav-link.text-secondary img { 
+       max-height: 35px;
+       max-width: 100px;
+   }
+
+   a.nav-link.text-secondary {
+        margin: 0px;
+   }
+
+   .playlistLikes{
+       margin-top: 0.5em;
+   }
+
+   nav.flex-column{
+       margin-left: 2em;
+   }
+
+   .installAppBtn{
+       margin-top: .5em;
+   }
