@@ -1,0 +1,39 @@
+.form-signin{
+    width:100%;
+    max-width: 450px;
+    margin:0 auto;
+}
+.btn-spotify{
+    border-radius: 35px;
+    color:#fff; 
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+#btn-facebook{
+    background-color: rgb(66, 103, 178);
+}
+#btn-apple{
+    background-color: black;
+}
+#btn-google{
+    border:1px solid black;
+    color:rgb(34, 34, 34);
+}
+.divider{
+    border-top: 1px solid #8b8b8b;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+}
+.divider-title{
+    background-color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding:0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
