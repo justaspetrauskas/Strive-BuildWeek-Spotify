@@ -1,0 +1,21 @@
+.artist-card {
+  height: 45%;
+}
+.artist-coverImg {
+  overflow: hidden;
+}
+.artist-card-body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+#artist-page-bottom {
+  background: rgb(164, 164, 164);
+  background: linear-gradient(
+    180deg,
+    rgba(164, 164, 164, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
