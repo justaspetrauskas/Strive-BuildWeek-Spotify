@@ -1,30 +1,35 @@
-   a.nav-link.text-secondary img { 
-       max-height: 35px;
-       max-width: 100px;
-   }
+a.nav-link.text-secondary img {
+  max-height: 35px;
+  max-width: 100px;
+}
 
-   a.nav-link.text-secondary {
-        margin: 0px;
-   }
+a.nav-link.text-secondary {
+  margin: 0px;
+}
 
-   #playlistLikes{
-       margin-top: 0.5em;
-   }
+#playlistLikes {
+  margin-top: 0.5em;
+}
 
-   nav.flex-column{
-       margin-left: 2em;
-   }
+nav.flex-column {
+  margin-left: 2em;
+}
 
-   .installAppBtn{
-       margin-top: .5em;
-   }
+.installAppBtn {
+  margin-top: 0.5em;
+}
 
-   #sidebar{
-        background-color: #101010;
-        width: 232px;
-        height: calc(100 vh - 40px);
-   }
+#sidebar {
+  background-color: #101010;
+  width: 232px;
+  height: calc(100 vh - 40px);
+}
 
-   #sidebarTracks{
-        margin-left: .5em;
-   }
+#sidebarTracks {
+  margin-left: 0.5em;
+}
+ul.list-unstyled li {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
