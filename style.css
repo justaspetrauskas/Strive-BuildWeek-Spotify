@@ -1,5 +1,6 @@
 /* Sidebar */
 
+
 a.nav-link.text-secondary img {
   max-height: 35px;
   max-width: 100px;
@@ -8,18 +9,26 @@ a.nav-link.text-secondary img {
   width: 100%;
 }
 
+div.nav-list{
+  padding: 0 0 0 2em
+}
+
+div.nav-list a{
+  color: rgb(187, 187, 187);
+  font-weight: 800;
+}
+
 a.nav-link.text-secondary {
   margin: 0px;
 }
 
-#playlistLikes {
-  margin-top: 0.5em;
+#sidebar div.nav-list{
+  color: rgb(187, 187, 187);
 }
 
-/* nav.flex-column {
-  margin-left: 2em;
-} */
-
+#playlistLikes {
+  margin-top: 1.5em;
+}
 
 .installAppBtn {
   margin-top: 0.5em;
@@ -28,18 +37,22 @@ a.nav-link.text-secondary {
 #sidebar {
   background-color: #101010;
   width: 232px;
-  height: calc(100vh - 40px);
+  height: 80vh;
   overflow-y: hidden;
+  font-size: small;
 }
 
-#sidebarTracks {
+.sidebarTracks {
   overflow-y: scroll;
+  padding-left: 1.5em;
 }
+
 ul.list-unstyled li {
   width: 95%;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 2rem;
+  color: b3b3b3;
 }
   /* Footer section  */
 #spotify-footer {
