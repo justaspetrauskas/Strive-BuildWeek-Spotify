@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(18,18,18);
 }
@@ -150,5 +151,154 @@ display: -webkit-box;
     width: 100%;
 }
 
+a.nav-link.text-secondary img {
+  max-height: 35px;
+  max-width: 100px;
+}
+.spotifyLogo {
+  width: 100%;
+}
 
+a.nav-link.text-secondary {
+  margin: 0px;
+}
 
+#playlistLikes {
+  margin-top: 0.5em;
+}
+
+/* nav.flex-column {
+  margin-left: 2em;
+} */
+
+.installAppBtn {
+  margin-top: 0.5em;
+}
+
+#sidebar {
+  background-color: #101010;
+  width: 232px;
+  height: calc(100vh - 40px);
+  overflow-y: hidden;
+}
+
+#sidebarTracks {
+  overflow-y: scroll;
+}
+ul.list-unstyled li {
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2rem;
+  
+#spotify-footer {
+  background-color: #181818;
+  font-size: 11px;
+  font-weight: 500;
+  color: #b3b3b3;
+  line-height: 1.6;
+  z-index: 4;
+}
+
+.song-author {
+  color: #b3b3b3;
+}
+.card-icons button.save-btn {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+.card-icons button.save-btn > i {
+  font-size: 1rem;
+  color: #b3b3b3;
+  cursor: default;
+}
+button.save-btn:hover > i,
+button.save-btn:focus > i,
+.btn-footer-repeat:focus > i,
+.btn-footer-shuffle:focus > i {
+  color: #1db954;
+}
+.song-title:hover,
+.song-author:hover {
+  color: #fff;
+}
+.album-cover-image {
+  height: 56px;
+  width: 56px;
+  overflow: hidden;
+}
+.btn-footer {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-footer-play,
+.btn-footer:hover,
+.btn-footer-small:hover {
+  color: #fff;
+}
+.btn-footer-play:hover {
+  transform: scale(1.05);
+}
+.song-title {
+  color: #fff;
+  font-weight: 400;
+}
+.footer-progress,
+.volume-bar {
+  width: 600px;
+  height: 4px;
+  border-radius: calc(height/2);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#footer-middle-bottom span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: none;
+  color: rgb(179, 179, 179);
+}
+#footer-right button.btn-footer:focus > i {
+  color: #1db954;
+}
+.btn-volume:hover ~ button.volume-bar-slider {
+  opacity: 100;
+}
+#footer-middle-bottom .footer-progress:hover .footer-progress-bar {
+  background-color: #1db954;
+}
+#footer-middle-bottom .footer-progress:hover + button.volume-bar-slider {
+  opacity: 100;
+  margin-left: -300px;
+}
+.volume-bar {
+  max-width: 100px;
+}
+.footer-progress-bar {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+}
+
+.btn-volume:hover + .volume-bar .footer-progress-bar,
+.volume-bar:hover .footer-progress-bar,
+.volume-bar:focus .footer-progress-bar {
+  background-color: #1db954;
+}
+.volume-bar:hover + button.volume-bar-slider {
+  opacity: 100;
+}
+.volume-bar-slider {
+  position: absolute;
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0/50%);
+  height: 12px;
+  margin-left: 90px;
+  opacity: 0;
+  width: 12px;
+  z-index: 4;
+}
