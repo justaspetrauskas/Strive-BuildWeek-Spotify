@@ -35,50 +35,58 @@
           <!-- Wako  -->
         </nav>
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-0">
-          <div class="card bg-dark text-white artist-card">
+          <div class="card border-0 text-white artist-card">
             <div class="artist-coverImg">
-              <img
-                class="img-fluid"
-                src="/assets/queen.jpg"
-                class="card-img"
-                alt="..."
-              />
+              <img src="/assets/queen.jpg" class="card-img" alt="..." />
             </div>
             <div class="artist-card-body">
               <span
-                ><i class="fas fa-user-check"></i>
-                <p
-                  style="
-                    display: inline-block;
-                    line-height: 1rem;
-                    margin-left: 0.3rem;
-                  "
-                >
-                  Verified Artist
-                </p></span
+                ><i class="fas fa-certificate" style="font-size: 14px"></i>
+                <p>Verified Artist</p></span
               >
               <h1 class="card-title">Queen</h1>
-              <p class="card-text"><span>37,120,733</span> montly listeners</p>
+              <p class="card-text m-0">
+                <span>37,120,733</span> montly listeners
+              </p>
             </div>
           </div>
-          <div id="artist-page-bottom">
-            <div class="row top-btns">
-              <button>play</button>
-              <button>follow</button>
-              <button>...</button>
+          <div id="artist-page-bottom" class="">
+            <div
+              class="
+                row
+                top-btns
+                d-flex
+                justify-content-start
+                align-items-center
+              "
+            >
+              <button type="button" class="button play-btn-big"></button>
+              <button type="button" class="button btn follow-btn-big">
+                Follow
+              </button>
+              <button type="button" class="button more-btn-big" title="More">
+                <svg
+                  role="img"
+                  height="32"
+                  width="32"
+                  viewBox="0 0 32 32"
+                  class="Svg-sc-1bi12j5-0 fIDrcz"
+                >
+                  <path
+                    d="M5.998 13.999A2 2 0 105.999 18a2 2 0 00-.001-4zm10.001 0A2 2 0 1016 18a2 2 0 000-4zm10.001 0A2 2 0 1026.001 18 2 2 0 0026 14z"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div id="artist-lef">
-              <div id="popular-list">
-                <div class="row">Popular</div>
-                <div class="row">
-                  <ol></ol>
+            <div class="artist-popular-content">
+              <div class="row">
+                <div class="popular-tracks">
+                  <h2>Popular</h2>
+                  <div class="tracks">
+                    <div class="row"></div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div id="artist-right">
-              <div id="popular-list">
-                <div class="row">Popular</div>
-                <div class="row"></div>
+                <div class="artist-pick"></div>
               </div>
             </div>
           </div>

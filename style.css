@@ -1,7 +1,7 @@
-.artist-card {
-  height: 45%;
-}
 .artist-coverImg {
+  height: 30vh;
+  max-height: 500px;
+  min-height: 340px;
   overflow: hidden;
 }
 .artist-card-body {
@@ -9,13 +9,90 @@
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 1.25rem;
+  padding: 2rem;
+}
+.card-img {
+  max-width: 100%;
+  height: auto;
+  object-position: 0 -150px;
+  /* object-fit: cover; */
+  border-radius: 0px;
+}
+.artist-card-body p i {
+  line-height: 0.5rem;
+  font-size: 11px;
+  font-weight: 400;
+}
+.artist-card-body p {
+  margin-left: 0.3rem;
+  display: inline-block;
+}
+.card-title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 2rem;
 }
 #artist-page-bottom {
   background: rgb(164, 164, 164);
-  background: linear-gradient(
-    180deg,
-    rgba(164, 164, 164, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(180deg, rgb(61, 61, 61) 0%, #1d1d1d 100%);
+  padding: 2rem;
+}
+
+.follow-btn-big {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #848484;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-right: 1.25rem;
+}
+.follow-btn-big:hover {
+  border-color: #fff;
+  color: #fff;
+}
+.play-btn-big {
+  position: relative;
+  height: 64px;
+  width: 64px;
+  content: "";
+  border-radius: 50%;
+  background-color: #47b850;
+  border: none;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  transition: all 0.1s;
+  transform: scale(1);
+}
+.play-btn-big:hover {
+  transform: scale(1.05);
+}
+.play-btn-big::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 25px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: transparent transparent transparent #ffffff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 14px 0 14px 24px;
+}
+button.more-btn-big {
+  background-color: transparent;
+  border: none;
+  fill: #b3b3b3;
+}
+button.more-btn-big:hover {
+  fill: #fff;
+}
+
+.artist-popular-content {
+  padding: 0 2rem;
 }
