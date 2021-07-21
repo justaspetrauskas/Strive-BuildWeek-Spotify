@@ -62,6 +62,26 @@ ul.list-unstyled li {
   line-height: 2rem;
   color: b3b3b3;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #363636; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   /* Footer section  */
 #spotify-footer {
   background-color: #181818;
