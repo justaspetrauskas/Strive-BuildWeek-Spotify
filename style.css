@@ -1,7 +1,7 @@
 .form-signin{
     width:100%;
     max-width: 450px;
-    margin:0 auto;
+    margin:0px auto;
 }
 .btn-spotify{
     border-radius: 35px;
@@ -10,9 +10,34 @@
     line-height: 1.5;
     font-weight: 700;
 }
+.login-btn{
+    border-radius: 35px;
+    color:#fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.blocktext {
+    margin-left: 65px;
+    margin-right: auto;
+    width: 8em;
+    font-weight: bold;
+    white-space: nowrap;
+    
+}
+#btn-login{
+    background-color: green;
+}
 
 #btn-facebook{
     background-color: rgb(66, 103, 178);
+}
+#container-text{
+    border-radius: 35px;
+    color:#fff; 
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 800;  
 }
 #btn-apple{
     background-color: black;
@@ -36,4 +61,7 @@
     padding:0 20px;
     text-transform: uppercase;
     font-weight: 700;
+}
+.remember{
+    margin-left: 15px;
 }

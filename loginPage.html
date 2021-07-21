@@ -26,9 +26,15 @@
                   </div>
           
     </header>
+
+     </div>
+     
     <div class="container-fluid d-flex justify-content-center align-items-center py-4">
       <div class="form-signin">
-      <div class="spotify-btn">
+        <div class="blocktext d-flex justify-content-center align-items-center py-2"> 
+          <span class="blocktext"> To continue, log in to spotify. </span>
+        </div>
+          <div class="spotify-btn">
         <button type="button" id="btn-facebook" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-facebook"></i>CONTINUE WITH FACEBOOK</button>
         <button type="button" id="btn-apple" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-apple"></i>CONTINUE WITH APPLE</button>
         <button type="button" id="btn-google" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-google"></i>CONTINUE WITH GOOGLE</button>
@@ -52,18 +58,41 @@
         <input type="password" class="form-control" placeholder="password"  id="exampleInputPassword1">
     
       </div>
-
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <div class="Forget-btn">
+        <a href="forgetPasswordController">forgot your password?</a>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <div class="remember">
+
+      
+      <div class="container-fluid d-flex justify-content-center align-items-center py-4">
+        <div class="remember">
           <span><input type="checkbox" name=""></span>
           <span> Remember me</span>
-      </div>
+          </div>
+          <div class="form-login">
+          </div>
+          <div class="login-btn">
+          <button class="login-btn" type="button" id="btn-login"> log in </button>
+          </div>
+      </div> 
+
+
       
-    </div>
+      
+   <!-- <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+       <!-- <form name="testForm" action="passwordValidationController" method="post">
+      <input type="text" name="userId" id="userId"><br>
+      
+      </form> -->
+      
+      
+      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          
+      
+    
+    
       <!-- <div class="login-box-outer">
         <div class="login-box-inner"> 
           <h1> to continue please log in</h1> 
