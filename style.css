@@ -30,6 +30,10 @@ a.nav-link.text-secondary {
   margin-top: 1.5em;
 }
 
+#playlistLikes a img {
+  height: 20px
+}
+
 .installAppBtn {
   margin-top: 0.5em;
 }
@@ -40,6 +44,10 @@ a.nav-link.text-secondary {
   height: 80vh;
   overflow-y: hidden;
   font-size: small;
+}
+
+#sidebar .nav-list a i {
+  font-size: 25px;
 }
 
 .sidebarTracks {
