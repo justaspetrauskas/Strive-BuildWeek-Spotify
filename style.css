@@ -1,3 +1,4 @@
+/* Sidebar */
 
 a.nav-link.text-secondary img {
   max-height: 35px;
@@ -19,6 +20,7 @@ a.nav-link.text-secondary {
   margin-left: 2em;
 } */
 
+
 .installAppBtn {
   margin-top: 0.5em;
 }
@@ -38,7 +40,8 @@ ul.list-unstyled li {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 2rem;
-  
+}
+  /* Footer section  */
 #spotify-footer {
   background-color: #181818;
   font-size: 11px;
