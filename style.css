@@ -10,12 +10,28 @@
     line-height: 1.5;
     font-weight: 700;
 }
-.login-btn{
+.signup-btn{
+    border-radius: 35px;
+    color:#fff; 
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+    .login-btn{
     border-radius: 35px;
     color:#fff;
     font-size: 14px;
     line-height: 1.5;
     font-weight: 700;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+
+}
+.container{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 500px;
 }
 .blocktext {
     margin-left: 65px;
@@ -27,6 +43,10 @@
 }
 #btn-login{
     background-color: green;
+
+}
+.btn-signup{
+    background-color: red;
 }
 
 #btn-facebook{
