@@ -1,4 +1,3 @@
-
 .artist-coverImg {
   height: 30vh;
   max-height: 500px;
@@ -674,7 +673,7 @@ button.track-like:hover i {
   height: auto;
   object-fit: cover;
   object-position: center center;
-=======
+}
 body {
   background-color: rgb(18, 18, 18);
 }
