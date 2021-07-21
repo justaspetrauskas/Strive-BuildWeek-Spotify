@@ -1,88 +1,161 @@
-.form-signin{
-    width:100%;
-    max-width: 450px;
-    margin:0px auto;
+.form-signin {
+  width: 100%;
+  max-width: 450px;
+  margin: 0px auto;
 }
-.btn-spotify{
-    border-radius: 35px;
-    color:#fff; 
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 700;
+.btn-spotify {
+  border-radius: 35px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
 }
-.signup-btn{
-    border-radius: 35px;
-    color:#fff; 
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 700;
+.signup-btn {
+  border-radius: 35px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
 }
-    .login-btn{
-    border-radius: 35px;
-    color:#fff;
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 700;
-    margin: 10px 0;
-    padding: 10px;
-    width: 105%;
-
+.login-btn {
+  border-radius: 35px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 10px;
+  width: 105%;
 }
-.container{
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 500px;
+.container {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 .blocktext {
-    margin-left: 65px;
-    margin-right: auto;
-    width: 8em;
-    font-weight: bold;
-    white-space: nowrap;
-    
+  margin-left: 65px;
+  margin-right: auto;
+  width: 8em;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-#btn-login{
-    background-color: green;
-
-}
-.btn-signup{
-    background-color: red;
+.btn-signup {
+  background-color: red;
 }
 
-#btn-facebook{
-    background-color: rgb(66, 103, 178);
+#btn-facebook {
+  background-color: #3b5998;
+  padding: 16px 14px 18px;
 }
-#container-text{
-    border-radius: 35px;
-    color:#fff; 
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 800;  
+#btn-facebook {
+  background-color: #3a61b3;
 }
-#btn-apple{
-    background-color: black;
+#container-text {
+  border-radius: 35px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 800;
 }
-#btn-google{
-    border:1px solid black;
-    color:rgb(34, 34, 34);
+#btn-apple {
+  background-color: black;
+  padding: 16px 14px 18px;
 }
-.divider{
-    border-top: 1px solid #8b8b8b;
-    display: block;
-    line-height: 1px;
-    margin: 15px 0;
-    position: relative;
-    text-align: center;
+#btn-google {
+  border: 1px solid black;
+  color: rgb(34, 34, 34);
+  padding: 16px 14px 18px;
 }
-.divider-title{
-    background-color: #fff;
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding:0 20px;
-    text-transform: uppercase;
-    font-weight: 700;
+#btn-apple:hover {
+  background-color: #616467;
 }
-.remember{
-    margin-left: 15px;
+.btn-spotify:hover {
+  color: #fff;
+}
+
+#btn-google:hover {
+  background-color: #616467;
+  color: #fff;
+}
+.divider {
+  content: "";
+  border-top: 1px solid #8b8b8b;
+  display: block;
+  line-height: 1px;
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+}
+.divider-title {
+  background-color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.remember {
+  margin-left: 15px;
+}
+.forget-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.forget-btn a {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #616467;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.forget-btn a:hover {
+  color: #1da64d;
+}
+.remember-check {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.remember-check input[type="checkbox"] {
+  border: 1px solid #c1c3c6;
+  height: 18px;
+  width: 18px;
+}
+.remember-check input:checked {
+  background-color: #1ed760;
+}
+.login-btn {
+  background-color: #15883e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2px;
+  min-width: 160px;
+  padding: 16px 14px 18px;
+  text-transform: uppercase;
+}
+.login-btn:hover {
+  background-color: #1ed760;
+  color: #fff;
+}
+.row-divider {
+  margin-bottom: 10px;
+}
+.signUp-btn {
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2px;
+  min-width: 160px;
+  padding: 16px 14px 18px;
+  text-transform: uppercase;
+}
+.signUp-btn:hover {
+  background-color: #616467;
+  color: #fff;
 }

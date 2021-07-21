@@ -19,9 +19,9 @@
     <title>Login-Spotify</title>
   </head>
   <body>
-    <header class="border-bottom py-4">
+    <header class="border-bottom ">
           
-              <div class="row d-flex justify-content-center align-items-start">
+              <div class="row d-flex justify-content-center align-items-start py-2">
               <a class="header-img" href="#"><img src="/SportifyLogo.png" style="height: 8rem;" alt="Logo"></a>
                   </div>
           
@@ -35,11 +35,11 @@
           <span class="blocktext"> To continue, log in to spotify. </span>
         </div>
           <div class="spotify-btn">
-        <button type="button" id="btn-facebook" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-facebook"></i>CONTINUE WITH FACEBOOK</button>
-        <button type="button" id="btn-apple" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-apple"></i>CONTINUE WITH APPLE</button>
-        <button type="button" id="btn-google" class="btn btn-spotify btn-lg btn-block"><i class="mx-2 fab fa-google"></i>CONTINUE WITH GOOGLE</button>
+        <button type="button" id="btn-facebook" class="btn btn-spotify btn-lg btn-block"><i class="mx-3 fab fa-facebook"></i>CONTINUE WITH FACEBOOK</button>
+        <button type="button" id="btn-apple" class="btn btn-spotify btn-lg btn-block"><i class="mx-3 fab fa-apple"></i>CONTINUE WITH APPLE</button>
+        <button type="button" id="btn-google" class="btn btn-spotify btn-lg btn-block"><i class="mx-3 fab fa-google"></i>CONTINUE WITH GOOGLE</button>
       </div>
-      <div class="row">
+      <div class="row align-items-center my-2">
       <div class="col-12">
         <div class="divider">
           <strong class="divider-title">or</strong>
@@ -58,26 +58,48 @@
         <input type="password" class="form-control" placeholder="password"  id="exampleInputPassword1">
     
       </div>
-      <div class="Forget-btn">
-        <a href="forgetPasswordController">forgot your password?</a>
+      <div class="forget-btn">
+        <div class= "col-xs-12">
+          <a href="forgetPasswordController">Forgot your password?</a>
+        </div> 
       </div>
-
-      
-      <div class="container-fluid d-flex justify-content-center align-items-center py-4">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-6">
+          <div class="remember-check">
+            <label class="">
+            <input type="checkbox" name="remember" class="login-checkbox">
+            Remember me
+          </label>
+          </div>
+          
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <button type="button" class="btn login-btn btn-lg btn-block"> log in </button> 
+        </div>
         
-          <div class="login-btn">
-          <button type="button" id="btn-login" class="btn login-btn btn-lg btn-block"> log in </button> 
-          <div class="border-bottom py-2">
+      </div>
+      <div class="row row-divider">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="divider">
+              </div>
+            </div>
+          </div>
+          <div class="rown text-center my-4">
+            <h4 class="spotify-account my-2">Don't have an account?</h4>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn signUp-btn btn-lg btn-block"> sign up for spotify </button> 
+            </div>
           </div>
         </div>
-          
-          
-        </div> 
-   
-        <div class="container-fluid d-flex justify-content-center align-items-center py-4">
-          <div class="blocktext d-flex justify-content-center align-items-center py-2"> 
-            <span class="blocktext"> Don't have an account? </span>
-        </div>
+      </div>
+      
+
+      
+      
         
       
       
