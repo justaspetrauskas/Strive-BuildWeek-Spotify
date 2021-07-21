@@ -15,13 +15,14 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
+    
+    <script src="https://kit.fontawesome.com/5403a5595c.js" crossorigin="anonymous"></script>
+  
     <!-- Bootstrap icon stylesheet  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -32,7 +33,7 @@
     <!-- Our Css -->
 
     <link rel="stylesheet" href="style.css" />
-    <title>Spotify Clone</title>
+    <title>Spotify-Clone</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -102,9 +103,220 @@
             </div>
           </nav>
         </nav>
-        <main style="background-color: blue; height: 100vh; width: 100%">
+        <main>
+
           <!-- Christian -->
+          <!-- Just an image -->
+
+         <section class="welcome-section">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-10">
+        <!---------- Navbar-->
+        <nav class="navbar navbar-light bg-light">
+          <div class="inline-block">
+            <div class="angle-arrows-left mr-2"><i class="fas fa-angle-left" style="font: size 10px;"></i></div>
+            <div class="angle-arrows-right ml-2"><i class="fas fa-angle-right"></i></div>
+          </div>
+          <div class="profile-name">
+            <div class="btn-group">
+              <button class="btn btn-sm text-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle mb-2  " style="font-size: 20px;"></i>
+                <div style="display: inline-block; max-width: 110px;"><p class="mb-0" style="white-space: nowrap;text-overflow: ellipsis; overflow: hidden; font-size: small; font-weight: 500;">Diego 'Ziba' Banovaz</p></div> 
+              </button>
+              <div class="dropdown-menu">
+
+          </div>
+        </nav>
+                <div class="my-3"><h3>Good Morning</h3></div>
+                <div class="row row-cols-5 my-2">
+                  <div class="col welcome-row " ><div><img class="welcome-image" src="/Assets/Burning Jazz-rock Fusion.jpg" alt=""></div><div class="welcome-albums-caption">Burning Jazz-Rock Fusion</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Liked Songs.jpg" alt=""><div class="welcome-albums-caption">Liked Songs </div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Metal ballads.jpg" alt=""><div class="welcome-albums-caption">Metal Ballads</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Post human survival.jpg" alt=""><div class="welcome-albums-caption">POST HUMAN: SURVIVAL</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/This is Joe Bonamassa.jpg" alt=""><div class="welcome-albums-caption">This is Joe Bonamassa</div></div>
+                </div>
+                <div class="row row-cols-5">
+                  <div class="col welcome-row d-flex justify-content-start" ><div><img class="welcome-image" src="/Assets/This is Midian.jpg" alt=""></div><div class="welcome-albums-caption"><p>This is Midian</p></div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Nymphetamine.jpg" alt=""><div class="welcome-albums-caption">Nymphetamine</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Amo.jpg" alt=""><div class="welcome-albums-caption">Amo</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Le bask.jpg" alt=""><div class="welcome-albums-caption">Le Bask</div></div>
+                  <div class="col welcome-row" ><img class="welcome-image" src="/Assets/Opeth.jpg" alt=""><div class="welcome-albums-caption">Opeth</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+<!-------------------------------------------Recently Played Row------------------------------->
+        <section class="recently-played">
+          <div class="container mt-3">
+            <div class="row justify-content-end">
+              <div class="col-10">
+                <h5 class="my-3">Recently Played</h5>
+                <div class="row">
+                  <div class="row row-cols-md-7">
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Burning Jazz-rock Fusion.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body ">
+                          <h5 class="card-title">Burning Jazz-Rock </h5>
+                          <p class="card-text">You'll find fiery, modern, groovy, jazz-Rock...</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Metal ballads.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Metal Ballads</h5>
+                          <p class="card-text">A collection of the best Metal Ballads</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/This is Midian.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body white-text">
+                          <h5 class="card-title">Midian</h5>
+                          <p class="card-text">Cradle of Faith </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Liked Songs.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Liked Songs</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Le bask.jpg" class="card-img-top card-image" style="border-radius: 50%;" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">LE BASK</h5>
+                          <p class="card-text">Artist</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Post human survival.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">POST HUMAN : S...</h5>
+                          <p class="card-text">Bring me the Horizon</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/This is Joe Bonamassa.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">This is Joe Bonam...</h5>
+                          <p class="card-text">This is Joe Bonamassa. The Essential tracks and </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Nymphetamine.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nymphetamine</h5>
+                          <p class="card-text">Cradle of Faith</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!--------------------Shows to try Row------------------------------------------------>
+          <div class="container mt-3">
+            <div class="row justify-content-end">
+              <div class="col-10">
+                <h5 class="my-0">Shows to try</h5>
+                <p style="font-size: 10px;">Podcasts we think you'll get hooked on</p>
+                <div class="row">
+                  <div class="row row-cols-md-7">
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Burning Jazz-rock Fusion.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body ">
+                          <h5 class="card-title">Burning Jazz-Rock </h5>
+                          <p class="card-text">You'll find fiery, modern, groovy, jazz-Rock...</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Metal ballads.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Metal Ballads</h5>
+                          <p class="card-text">A collection of the best Metal Ballads</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/This is Midian.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body white-text">
+                          <h5 class="card-title">Midian</h5>
+                          <p class="card-text">Cradle of Faith </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Liked Songs.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Liked Songs</h5>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Le bask.jpg" class="card-img-top card-image" style="border-radius: 50%;" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">LE BASK</h5>
+                          <p class="card-text">Artist</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Post human survival.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">POST HUMAN : S...</h5>
+                          <p class="card-text">Bring me the Horizon</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/This is Joe Bonamassa.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">This is Joe Bonam...</h5>
+                          <p class="card-text">This is Joe Bonamassa. The Essential tracks and </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4 px-1">
+                      <div class="card card-background h-100">
+                        <img src="/Assets/Nymphetamine.jpg" class="card-img-top card-image" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nymphetamine</h5>
+                          <p class="card-text">Cradle of Faith</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </section>
         </main>
+
         <footer>
           <!-- Justas -->
           <div
