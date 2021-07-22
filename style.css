@@ -6,6 +6,12 @@ a.nav-link.text-secondary img {
   max-width: 100px;
 }
 .spotifyLogo {
+  position: relative;
+  display: inline-flex;
+  margin-left: 2em;
+  top: 0px;
+  bottom:0px;
+  text-align:center;
   width: 100%;
 }
 
@@ -31,11 +37,15 @@ a.nav-link.text-secondary {
 }
 
 #playlistLikes a img {
-  height: 20px
+  height: 26px
 }
 
-.installAppBtn {
-  margin-top: 0.5em;
+#playlistLikes button {
+  z-index: 1;
+}
+
+.installApp{
+  
 }
 
 #sidebar {
@@ -46,13 +56,24 @@ a.nav-link.text-secondary {
   font-size: small;
 }
 
-#sidebar .nav-list a i {
+#sidebar .nav-list a i,
+#sidebar .nav-list img {
   font-size: 25px;
+  margin-right: 10px;
 }
 
 .sidebarTracks {
   overflow-y: scroll;
   padding-left: 1.5em;
+}
+
+.sidebarDivider {
+  content: "";
+  border-top: 1px solid #8b8b8b;
+  display: block;
+  line-height: 1px;
+  position: relative;
+  text-align: center;
 }
 
 ul.list-unstyled li {
@@ -63,22 +84,18 @@ ul.list-unstyled li {
   color: b3b3b3;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #363636; 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
