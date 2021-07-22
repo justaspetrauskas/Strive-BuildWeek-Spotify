@@ -48,7 +48,7 @@
   background-color: #3b5998;
   padding: 16px 14px 18px;
 }
-#btn-facebook {
+#btn-facebook:hover {
   background-color: #3a61b3;
 }
 #container-text {
@@ -118,15 +118,44 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.login-checkbox {
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  align-items: baseline;
+  justify-content: start;
+}
+.checkbox > span {
+  color: #616467;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.checkbox > input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   border: 1px solid #c1c3c6;
+  border-radius: 4px;
   height: 18px;
   width: 18px;
-  background-color: fuchsia;
+  cursor: pointer;
 }
-.remember-check input:checked ~ .login-checkbox {
-  background-color: #1ed760;
+.checkbox > input:checked {
+  background-color: #15883e;
+  border-color: #15883e;
 }
+.checkbox > input:checked + span::before {
+  content: "\2713";
+  color: #fff;
+  display: block;
+  position: absolute;
+  left: 0.25rem;
+  top: -0.2rem;
+}
+
 .login-btn {
   background-color: #15883e;
   font-size: 14px;
