@@ -118,12 +118,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.remember-check input[type="checkbox"] {
+.login-checkbox {
   border: 1px solid #c1c3c6;
   height: 18px;
   width: 18px;
+  background-color: fuchsia;
 }
-.remember-check input:checked {
+.remember-check input:checked ~ .login-checkbox {
   background-color: #1ed760;
 }
 .login-btn {
