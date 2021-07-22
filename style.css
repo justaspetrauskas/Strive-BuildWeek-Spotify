@@ -279,7 +279,8 @@ button.track-like:hover i {
   height: auto;
   object-fit: cover;
   object-position: center center;
-=======
+}
+
 body {
   background-color: rgb(18, 18, 18);
 }
@@ -290,7 +291,7 @@ body {
 .fas {
   color: white;
 }
-.welcome-section {
+main {
   color: white;
   background-color: rgb(184, 24, 24);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%);
@@ -433,6 +434,24 @@ a.nav-link.text-secondary {
 /* nav.flex-column {
   margin-left: 2em;
 } */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 .installAppBtn {
   margin-top: 0.5em;
