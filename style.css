@@ -1,7 +1,41 @@
- feature/sidebar
-/* Sidebar */
-
-
+body {
+  background-color: rgb(18, 18, 18);
+}
+#top-navigation-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+}
+#top-navigation-wrapper .top-navigation {
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-arrows {
+  display: flex;
+}
+.top-section-title,
+.top-section-title-secondary {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: 36px;
+}
+.top-section-title-secondary {
+  font-size: 24px;
+  line-height: 28px;
+}
 .artist-coverImg {
   height: 30vh;
   max-height: 500px;
@@ -678,34 +712,77 @@ button.track-like:hover i {
   object-fit: cover;
   object-position: center center;
 }
-body {
-  background-color: rgb(18, 18, 18);
-}
-.navbar {
-  background-color: transparent !important;
-}
 
 .fas {
   color: white;
 }
-.welcome-section {
+main {
   color: white;
   background-color: rgb(184, 24, 24);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%);
 }
 
 .welcome-row {
-  height: 50px;
+  height: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 80px;
+  border-radius: 4px;
+  overflow: clip;
+  text-overflow: ellipsis;
 }
-
-.card-background {
-  background-color: rgb(24, 24, 24);
+.welcome-row-image {
+  min-height: 80px;
+  min-width: 80px;
+}
+.welcome-row-image > img {
+  border-radius: 4px 0 0 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.welcome-card-body {
+  padding: 16px;
+}
+.see-all a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.see-all a:hover {
+  text-decoration: underline;
+}
+.other-card {
+  padding: 16px;
+  background-color: rgba(24, 24, 24, 0.76);
   color: white;
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  max-width: 18rem;
+  box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.425);
 }
-
-.card-image {
-  padding: 9px;
+.other-card-img {
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.other-card-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-position: 50% 50%;
 }
 
 .profile-name {
@@ -729,25 +806,30 @@ svg {
 .welcome-image {
   top: 0;
   left: 0;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: auto;
+  overflow: hidden;
+}
+.welcome-image > img {
+  object-fit: cover;
 }
 
 .welcome-albums-caption {
   color: white;
   font-weight: bold;
-  font-size: 11px;
-  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 700;
   width: 300px;
   vertical-align: center;
-  padding: 10px;
+  padding: 16px;
 }
 
 .angle-arrows-left,
 .angle-arrows-right {
   background-color: black;
-  height: 32px;
-  width: 32px;
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
   display: inline-flex;
   opacity: 0.5;
@@ -759,24 +841,20 @@ svg {
   position: absolute;
   align-items: center;
   justify-content: center;
-  transform: translateX(140%);
+  transform: translateX(186%);
 }
 
 .fa-angle-right {
   position: absolute;
   align-items: center;
   justify-content: center;
-  transform: translateX(140%);
+  transform: translateX(186%);
 }
 
 .albums-caption {
   color: white;
 }
 
-.recently-played {
-  background-color: rgb(18, 18, 18);
-  color: white;
-}
 .card {
   padding: 0px;
   margin: 2px;
@@ -800,10 +878,23 @@ svg {
   overflow: hidden;
 }
 
-.card-body {
-  padding: 8px;
+.other-card-body {
+  min-height: 62px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
+.other-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.other-card-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(179, 179, 179);
+}
 .card:hover::before {
   content: "";
   background-color: rgb(255, 255, 255, 0.15);
@@ -811,7 +902,6 @@ svg {
   height: 100%;
   width: 100%;
 }
-
 
 a.nav-link.text-secondary img {
   max-height: 35px;
@@ -822,16 +912,16 @@ a.nav-link.text-secondary img {
   display: inline-flex;
   margin-left: 2em;
   top: 0px;
-  bottom:0px;
-  text-align:center;
+  bottom: 0px;
+  text-align: center;
   width: 100%;
 }
 
-div.nav-list{
-  padding: 0 0 0 2em
+div.nav-list {
+  padding: 0 0 0 2em;
 }
 
-div.nav-list a{
+div.nav-list a {
   color: rgb(187, 187, 187);
   font-weight: 800;
 }
@@ -840,7 +930,7 @@ a.nav-link.text-secondary {
   margin: 0px;
 }
 
-#sidebar div.nav-list{
+#sidebar div.nav-list {
   color: rgb(187, 187, 187);
 }
 
@@ -849,15 +939,11 @@ a.nav-link.text-secondary {
 }
 
 #playlistLikes a img {
-  height: 26px
+  height: 26px;
 }
 
 #playlistLikes button {
   z-index: 1;
-}
-
-.installApp{
-  
 }
 
 #sidebar {
@@ -893,8 +979,6 @@ ul.list-unstyled li {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 2rem;
-
-  feature/sidebar
   color: b3b3b3;
 }
 
@@ -903,22 +987,19 @@ ul.list-unstyled li {
 }
 
 ::-webkit-scrollbar-track {
-  background: #363636; 
+  background: #363636;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-  /* Footer section  */
+/* Footer section  */
 
-}
-
- artistPage
-#spotify-footer {
+artistPage #spotify-footer {
   background-color: #181818;
   font-size: 11px;
   font-weight: 500;
