@@ -40,7 +40,7 @@
       <div class="container-fluid">
         <div class="row">
           <nav class="col-md-2 col-lg-2 d-md-block " id="sidebar">
-            <div class="position-sticky pt-3"> 
+            <div class="position-sticky pt-3 side-navigation"> 
             <div class="spotifyLogo">
               <a class="nav-link text-secondary" href="#">
                 <img
@@ -50,28 +50,22 @@
               </a>
             </div>
             <div class="nav-list">
-              <a class="nav-link active" href="#"
-                ><i class="bi bi-house-door"> </i>Home</a
-              >
-              <a class="nav-link href="#"
-                ><i class="bi bi-search"></i> Search</a
-              >
-              <a class="nav-link href="#"
-                ><i class="bi bi-collection"></i> Your Library</a
-              >
-              <div id="playlistLikes">
-                <a class="nav-link href="#"
+              <li><a class="nav-link " href="#"><i class="bi bi-house-door"> </i>Home</a></li>
+              <li><a class="nav-link" href="#"><i class="bi bi-search"></i> Search</a></li>
+              <li><a class="nav-link" href="#"><i class="bi bi-collection"></i> Your Library</a></li>
+            </div>
+            <div id="playlistLikes">
+                <button type="button" class="playlistLikes-item"><a class=" href="#"
                   ><i class="bi bi-plus-square"></i> Create Playlist</a
-                >
-                <a class="nav-link href="#"
-                  ><img src="/assets/likedsidebaricon.jpeg" alt="Liked songs icon"> Liked Songs</a
-                >
-              <div class="container">
-                 <div class="sidebarDivider"></div>
-
-                <div class="sidebarTracks" class="px-3">
-                  <ul class="list-unstyled">
-                    <li>Loading - Olamide ft. Bad Boy Timz</li>
+                ></button>
+                <button type="button" class="playlistLikes-item"><a class=" href="#"
+                  ><img src="/assets/likedsidebaricon.jpeg" alt="Liked songs icon">Liked Songs</a
+                ></button>
+              
+              <div class=sidebarDivider></div>
+                <div class="sidebarTracks">
+                  <ul class="sidebar-list-unstyled">
+                    <li>Loading - Olamide ft. Bad Boy Timz </li>
                     <li>Damages - Tems</li>
                     <li>Shad'e - Fireboy DML</li>
                     <li>Party With A Jagaban - Midas the Jagaban</li>
@@ -92,15 +86,16 @@
                   <li>Your Mines - Yung Bleu ft. Drake</li>
                   <li>Bare Wit Me - Teyana Taylor</li>
                 </ul>
-              </div class="installApp">
-                <a><i class="bi bi-arrow-down-circle"></i> Install App</a>
+                </div>
             </div>
-          </div>
-        </div>  
-        </nav>
+            <div class="installApp">
+              <a><i class="bi bi-arrow-down-circle"></i> Install App</a>
+            </div> 
+          </nav>
         <main class="col-md-9 col-lg-10 " style="margin-left: 238px;">
           <div class="container-fluid mt-3 px-0 px-md-3">
             <!---------- Navbar-->
+            
             <div class="row px-4 py-2">
               
               <header id="top-navigation-wrapper" class="row">
@@ -214,7 +209,7 @@
           <span class="see-all"><a href="">See all</a> </span>
         </div>      
           <div class="row my-3">
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;"">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;"">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Burning Jazz-rock Fusion.jpg" alt="...">
@@ -225,7 +220,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Metal ballads.jpg" alt="...">
@@ -236,7 +231,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/This is Midian.jpg" alt="...">
@@ -247,7 +242,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Liked Songs.jpg" alt="...">
@@ -258,7 +253,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Le bask.jpg" alt="...">
@@ -269,7 +264,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Post human survival.jpg" alt="...">
@@ -280,7 +275,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/This is Joe Bonamassa.jpg" alt="...">
@@ -291,7 +286,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Nymphetamine.jpg" alt="...">
@@ -316,7 +311,7 @@
   <span class="see-all"><a href="">See all</a> </span>
 </div>      
   <div class="row my-3">
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;"">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;"">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Burning Jazz-rock Fusion.jpg" alt="...">
@@ -327,7 +322,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Metal ballads.jpg" alt="...">
@@ -338,7 +333,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/This is Midian.jpg" alt="...">
@@ -349,7 +344,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Liked Songs.jpg" alt="...">
@@ -360,7 +355,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Le bask.jpg" alt="...">
@@ -371,7 +366,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Post human survival.jpg" alt="...">
@@ -382,7 +377,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/This is Joe Bonamassa.jpg" alt="...">
@@ -393,7 +388,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.7rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Nymphetamine.jpg" alt="...">
@@ -407,10 +402,10 @@
 
                   
   </div>  
-      </main>
+        </main>  
+      </div>
+        </div>
       
-      </div>
-      </div>
 
 
                   
@@ -418,120 +413,101 @@
 
 
  
-        <footer>
+      <footer>
+        <!-- Justas -->
+        <div id="spotify-footer" class="container-fluid">
           <div
-            id="spotify-footer"
-            class="
-              d-none
-              container-fluid
-              fixed-bottom
-              pt-3
-              pb-2
-              px-3
-              d-flex
-              justify-content-between
-              align-items-center
-            "
+            id="footer-left"
+            class="d-flex justify-content-start align-items-center"
           >
-            <div
-              id="footer-left"
-              class="d-flex justify-content-start align-items-center"
-            >
-              <div class="album-cover-image">
-                <img
-                  class="img-fluid"
-                  src="/assets/footer/albumCover.jpg"
-                  alt=""
-                />
-              </div>
+            <div class="album-cover-image">
+              <img
+                class="img-fluid"
+                src="/assets/footer/albumCover.jpg"
+                alt=""
+              />
+            </div>
 
-              <div class="card-body text-white d-flex flex-column text-nowrap">
-                <a href="#" class="card-title h6 mb-0 song-title"
-                  >Torna a casa</a
-                >
-                <span> <a href="#" class="song-author">Måneskin</a></span>
-              </div>
-              <div class="card-icons text-white ml-2">
-                <button type="button" class="save-btn">
-                  <i class="far fa-heart"></i>
-                </button>
-              </div>
-            </div>
-            <div id="footer-middle">
-              <div
-                id="footer-middle-top"
-                class="d-flex justify-content-center align-items-center mb-3"
+            <div class="card-body text-white d-flex flex-column text-nowrap">
+              <a href="#" class="footer-card-title h6 mb-0 song-title"
+                >Torna a casa</a
               >
-                <button class="btn-footer btn-footer-shuffle">
-                  <i class="fas fa-random"></i>
-                </button>
-                <button class="btn-footer">
-                  <i class="fas fa-step-backward"></i>
-                </button>
-                <button class="btn-footer btn-footer-play">
-                  <i class="fas fa-play-circle" style="font-size: 2rem"></i>
-                </button>
-                <button class="btn-footer">
-                  <i class="fas fa-step-forward"></i>
-                </button>
-                <button class="btn-footer btn-footer-repeat">
-                  <i class="fas fa-redo"></i>
-                </button>
-              </div>
-              <div
-                id="footer-middle-bottom"
-                class="
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                  text-white
-                "
-              >
-                <span class="mx-2">0:12</span>
-                <div class="progress footer-progress">
-                  <div
-                    class="progress-bar footer-progress-bar"
-                    role="progressbar"
-                    style="width: 25%"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <button class="volume-bar-slider"></button>
-                <span class="mx-2">3:34</span>
-              </div>
+              <span> <a href="#" class="song-author">Måneskin</a></span>
             </div>
-            <div
-              id="footer-right"
-              class="d-flex justify-content-center align-items-center"
-            >
-              <button class="btn-footer btn-footer-small btn-queue">
-                <i class="fas fa-th-list"></i>
-              </button>
-              <button class="btn-footer btn-footer-small">
-                <i class="fas fa-plug"></i>
-              </button>
-              <button class="btn-footer btn-volume">
-                <i class="fas fa-volume-up"></i>
-              </button>
-              <div class="progress volume-bar">
-                <div
-                  class="progress-bar footer-progress-bar"
-                  role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <button class="volume-bar-slider"></button>
-              <button class="btn-footer btn-footer-small">
-                <i class="fas fa-expand-alt"></i>
+            <div class="card-icons text-white ml-2">
+              <button type="button" class="save-btn">
+                <i class="far fa-heart"></i>
               </button>
             </div>
           </div>
-        </footer>
+          <div id="footer-middle">
+            <div
+              id="footer-middle-top"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <button class="btn-footer btn-footer-shuffle">
+                <i class="fas fa-random"></i>
+              </button>
+              <button class="btn-footer">
+                <i class="fas fa-step-backward"></i>
+              </button>
+              <button class="btn-footer btn-footer-play">
+                <i class="fas fa-play-circle" style="font-size: 2rem"></i>
+              </button>
+              <button class="btn-footer">
+                <i class="fas fa-step-forward"></i>
+              </button>
+              <button class="btn-footer btn-footer-repeat">
+                <i class="fas fa-redo"></i>
+              </button>
+            </div>
+            <div id="footer-middle-bottom">
+              <span class="mx-2">0:12</span>
+              <div class="progress playback-progress-container">
+                <input
+                  class="playback-time"
+                  type="range"
+                  min="0"
+                  max="100%"
+                  value="40"
+                  style="background-size: 30% 100%"
+                />
+                <button class="volume-bar-slider"></button>
+              </div>
+
+              <span class="mx-2">3:34</span>
+            </div>
+          </div>
+          <div
+            id="footer-right"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <button class="btn-footer btn-footer-small btn-queue">
+              <i class="fas fa-th-list"></i>
+            </button>
+            <button class="btn-footer btn-footer-small">
+              <i class="fas fa-plug"></i>
+            </button>
+            <button class="btn-footer btn-volume">
+              <i class="fas fa-volume-up"></i>
+            </button>
+            <div class="progress volume-bar">
+              <div
+                class="progress-bar footer-progress-bar"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <button class="volume-bar-slider"></button>
+            <button class="btn-footer btn-footer-small">
+              <i class="fas fa-expand-alt"></i>
+            </button>
+          </div>
+        </div>
+      </footer>
       </div>
     </div>
 

@@ -27,6 +27,32 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.installApp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 8px;
+  z-index: 3;
+  position: absolute;
+  bottom: 90px;
+  background-color: rgb(14, 14, 14);
+  color: #b3b3b3;
+  line-height: 16px;
+  width: 100%;
+}
+.installApp a > i {
+  margin-right: 16px;
+}
+.installApp a {
+  display: flex;
+  padding: 4px 16px;
+  height: 40px;
+  align-items: center;
+  justify-content: start;
+}
+.installApp:hover {
+  color: #fff;
+}
 .navigation-arrows {
   display: flex;
 }
@@ -326,12 +352,13 @@ button.track-like:hover i {
 }
 /* footer */
 #spotify-footer {
+  position: fixed;
   background-color: #181818;
   font-size: 11px;
   font-weight: 500;
   color: #b3b3b3;
   line-height: 1.6;
-  z-index: 4;
+  z-index: 999;
 }
 
 .song-author {
@@ -915,20 +942,47 @@ a.nav-link.text-secondary img {
 .spotifyLogo {
   position: relative;
   display: inline-flex;
-  margin-left: 2em;
+  padding: 0 24px;
+  margin-bottom: 18px;
   top: 0px;
   bottom: 0px;
   text-align: center;
   width: 100%;
 }
-
-div.nav-list {
-  padding: 0 0 0 2em;
+.spotifyLogo img {
+  width: 100%;
+  height: auto;
 }
-
-div.nav-list a {
+.nav-list {
+  padding: 0 8px;
+}
+div.nav-list li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 40px;
+  border-radius: 4px;
+}
+div.nav-list li:hover {
+  background-color: rgba(41, 41, 41, 0.534);
+}
+div.nav-list li:hover a {
+  color: #fff;
+}
+div.nav-list li > a > i {
+  font-size: 24px;
+  margin-right: 16px;
+}
+div.nav-list li a {
+  display: flex;
+  justify-self: start;
+  align-items: center;
   color: rgb(187, 187, 187);
   font-weight: 800;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
 }
 
 a.nav-link.text-secondary {
@@ -941,13 +995,19 @@ a.nav-link.text-secondary {
   left: 0;
   z-index: 2;
   padding: 0;
+  background-color: #000000;
+  width: 238px;
+  display: flex;
+  flex-direction: column;
 }
 .position-sticky {
   position: sticky;
   top: 48px;
-  height: calc(100vh - 48px);
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: 100%;
+}
+.side-navigation {
+  padding-top: 24px;
+  width: 100%;
 }
 
 #sidebar div.nav-list {
@@ -955,79 +1015,172 @@ a.nav-link.text-secondary {
 }
 
 #playlistLikes {
-  margin-top: 1.5em;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.playlistLikes-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.playlistLikes-item > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #b3b3b3;
+  font-weight: 700;
+  padding: 0 16px;
+}
+.playlistLikes-item > a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
-#playlistLikes a img {
-  height: 26px;
+.playlistLikes-item > a > i {
+  margin-right: 16px;
+  font-size: 24px;
+  padding: 4px;
+  color: #b3b3b3;
 }
-
-#playlistLikes button {
-  z-index: 1;
-}
-
-#sidebar {
-  background-color: #101010;
-  width: 232px;
-  height: 80vh;
-  overflow-y: hidden;
-  font-size: small;
-}
-
-#sidebar .nav-list a i,
-#sidebar .nav-list img {
-  font-size: 25px;
-  margin-right: 10px;
+.playlistLikes-item > a img {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  margin-left: 3px;
 }
 
 .sidebarTracks {
   overflow-y: scroll;
-  padding-left: 1.5em;
 }
 
 .sidebarDivider {
   content: "";
-  border-top: 1px solid #8b8b8b;
+  border-top: 1px solid #282828;
   display: block;
   line-height: 1px;
   position: relative;
   text-align: center;
+  margin: 10px 25px 0;
 }
-
-ul.list-unstyled li {
-  width: 95%;
+ul.sidebar-list-unstyled {
+  padding: 8px;
+  height: 640px;
+  width: 100%;
+  display: block;
+}
+ul.sidebar-list-unstyled li {
+  display: list-item;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  padding: 0 18px;
+  line-height: 1.6;
+  color: #b3b3b3;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+ul.sidebar-list-unstyled li:hover {
+  color: #fff;
+}
+ul.list-unstyled li {
+  height: 100%;
+  width: 100%;
+
   line-height: 2rem;
-  color: b3b3b3;
+
+  color: #b3b3b3;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #363636;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: rgba(255, 255, 255, 0.527);
 }
 /* Footer section  */
 
-artistPage #spotify-footer {
+#spotify-footer {
   background-color: #181818;
+  width: 100%;
   font-size: 11px;
   font-weight: 500;
   color: #b3b3b3;
   line-height: 1.6;
-  z-index: 4;
+  z-index: 10;
+  height: 90px;
+  padding: 0 16px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
 }
-
+.playback-progress-container {
+  height: 4px;
+  position: relative;
+  width: 643px;
+  background-color: transparent;
+  overflow: visible;
+}
+input[type="range"].playback-time {
+  width: 642px;
+  height: 4px;
+  outline: none;
+  border-radius: 4px;
+  background-color: #535353;
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #b3b3b3),
+    color-stop(100%, #b3b3b3)
+  );
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+}
+input[type="range"].playback-time:hover {
+  background-image: -webkit-gradient(
+    linear,
+    50% 0%,
+    50% 100%,
+    color-stop(0%, #1db954),
+    color-stop(100%, #1db954)
+  );
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+}
+input[type="range"].playback-time::-webkit-slider-thumb {
+  opacity: 0;
+  height: 12px;
+  width: 12px;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0/50%);
+  border-radius: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+}
+.playback-progress-container:hover input[type="range"]::-webkit-slider-thumb {
+  opacity: 100;
+}
 .song-author {
   color: #b3b3b3;
 }
@@ -1081,6 +1234,13 @@ button.save-btn:focus > i,
   height: 4px;
   border-radius: calc(height/2);
   background-color: rgba(255, 255, 255, 0.3);
+}
+#footer-middle-bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 #footer-middle-bottom span {
   font-size: 0.7rem;
