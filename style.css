@@ -1,5 +1,10 @@
 body {
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(184, 24, 24);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%);
+}
+.col-lg-10 {
+  flex: 0 0 87.333333%;
+  max-width: 87.333333%;
 }
 #top-navigation-wrapper {
   justify-content: space-between;
@@ -928,6 +933,21 @@ div.nav-list a {
 
 a.nav-link.text-secondary {
   margin: 0px;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+}
+.position-sticky {
+  position: sticky;
+  top: 48px;
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #sidebar div.nav-list {
