@@ -1,3 +1,7 @@
+ feature/sidebar
+/* Sidebar */
+
+
 .artist-coverImg {
   height: 30vh;
   max-height: 500px;
@@ -808,47 +812,112 @@ svg {
   width: 100%;
 }
 
+
 a.nav-link.text-secondary img {
   max-height: 35px;
   max-width: 100px;
 }
 .spotifyLogo {
+  position: relative;
+  display: inline-flex;
+  margin-left: 2em;
+  top: 0px;
+  bottom:0px;
+  text-align:center;
   width: 100%;
+}
+
+div.nav-list{
+  padding: 0 0 0 2em
+}
+
+div.nav-list a{
+  color: rgb(187, 187, 187);
+  font-weight: 800;
 }
 
 a.nav-link.text-secondary {
   margin: 0px;
 }
 
-#playlistLikes {
-  margin-top: 0.5em;
+#sidebar div.nav-list{
+  color: rgb(187, 187, 187);
 }
 
-/* nav.flex-column {
-  margin-left: 2em;
-} */
+#playlistLikes {
+  margin-top: 1.5em;
+}
 
-.installAppBtn {
-  margin-top: 0.5em;
+#playlistLikes a img {
+  height: 26px
+}
+
+#playlistLikes button {
+  z-index: 1;
+}
+
+.installApp{
+  
 }
 
 #sidebar {
   background-color: #101010;
   width: 232px;
-  height: calc(100vh - 40px);
+  height: 80vh;
   overflow-y: hidden;
+  font-size: small;
 }
 
-#sidebarTracks {
-  overflow-y: scroll;
+#sidebar .nav-list a i,
+#sidebar .nav-list img {
+  font-size: 25px;
+  margin-right: 10px;
 }
+
+.sidebarTracks {
+  overflow-y: scroll;
+  padding-left: 1.5em;
+}
+
+.sidebarDivider {
+  content: "";
+  border-top: 1px solid #8b8b8b;
+  display: block;
+  line-height: 1px;
+  position: relative;
+  text-align: center;
+}
+
 ul.list-unstyled li {
   width: 95%;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 2rem;
+
+  feature/sidebar
+  color: b3b3b3;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #363636; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+  /* Footer section  */
+
+}
+
+ artistPage
 #spotify-footer {
   background-color: #181818;
   font-size: 11px;
