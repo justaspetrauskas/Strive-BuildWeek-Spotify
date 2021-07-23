@@ -1,7 +1,25 @@
+html {
+}
 body {
   background-color: rgb(184, 24, 24);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%);
 }
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.527);
+}
+
 .col-lg-10 {
   flex: 0 0 87.333333%;
   max-width: 87.333333%;
@@ -10,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 85%;
   height: 60px;
   z-index: 3;
 }
@@ -19,13 +37,18 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  position: absolute;
   overflow: hidden;
   height: 100%;
-  width: 96%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card {
+  margin: 0px;
+}
+#album-page {
+  overflow-x: hidden;
 }
 .installApp {
   display: flex;
@@ -66,6 +89,13 @@ body {
 .top-section-title-secondary {
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 0;
+}
+.top-section-title-secondary + p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #b3b3b3;
 }
 .artist-coverImg {
   height: 30vh;
@@ -101,8 +131,8 @@ body {
   display: inline-block;
 }
 .album-card-title {
-  font-size: 5rem;
-  font-weight: 700;
+  font-size: 6rem;
+  font-weight: 800;
   line-height: 50px;
   margin-bottom: 2rem;
 }
@@ -158,6 +188,34 @@ body {
   cursor: pointer;
   border-style: solid;
   border-width: 14px 0 14px 24px;
+}
+.play-btn-md {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  content: "";
+  border-radius: 50%;
+  background-color: #47b850;
+  border: none;
+  margin-left: 8px;
+  transition: all 0.1s;
+  opacity: 0;
+  transform: scale(1);
+  box-shadow: 0px 0px 15px 5px rgba(12, 12, 12, 0.418);
+}
+.play-btn-md::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 16px;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  border-color: transparent transparent transparent #ffffff;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 8px 0 8px 14px;
 }
 
 button.more-btn-big,
@@ -355,7 +413,7 @@ button.track-like:hover i {
   object-position: center center;
 }
 /* footer */
-#spotify-footer {
+.spotify-footer {
   position: fixed;
   background-color: #181818;
   font-size: 11px;
@@ -759,15 +817,26 @@ main {
 }
 
 .welcome-row {
-  height: 100%;
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.1);
   height: 80px;
   border-radius: 4px;
   overflow: clip;
   text-overflow: ellipsis;
+  transition: all 0.3s;
+}
+.welcome-row:hover .welcome-card-image {
+  box-shadow: 10px 2px 20px rgba(12, 12, 12, 0.671);
+}
+.welcome-row:hover .play-btn-md {
+  opacity: 1;
+}
+.play-btn-md:focus {
+  opacity: 1;
 }
 .welcome-row-image {
   min-height: 80px;
@@ -807,6 +876,10 @@ main {
   line-height: 24px;
   max-width: 18rem;
   box-shadow: 0px 5px 10px rgba(12, 12, 12, 0.425);
+  transition: all 0.3s;
+}
+.other-card:hover {
+  background-color: rgba(32, 32, 32, 0.616);
 }
 .other-card-img {
   margin-bottom: 16px;
@@ -852,13 +925,28 @@ svg {
 
 .welcome-albums-caption {
   color: white;
+
   font-weight: bold;
   font-size: 1rem;
   line-height: 24px;
   font-weight: 700;
-  width: 300px;
+  width: 100%;
   vertical-align: center;
   padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.welcome-albums-caption a {
+  width: 140px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .angle-arrows-left,
@@ -893,7 +981,7 @@ svg {
 
 .card {
   padding: 0px;
-  margin: 2px;
+  margin: 0px;
   position: relative;
 }
 
@@ -1036,6 +1124,7 @@ a.nav-link.text-secondary {
   color: #b3b3b3;
   font-weight: 700;
   padding: 0 16px;
+  font-size: 14px;
 }
 .playlistLikes-item > a:hover {
   color: #fff;
@@ -1070,12 +1159,12 @@ a.nav-link.text-secondary {
 }
 ul.sidebar-list-unstyled {
   padding: 8px;
-  height: 640px;
+  height: 512px;
   width: 100%;
   display: block;
 }
 ul.sidebar-list-unstyled li {
-  display: list-item;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
@@ -1099,24 +1188,9 @@ ul.list-unstyled li {
   color: #b3b3b3;
 }
 
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.527);
-}
 /* Footer section  */
 
-#spotify-footer {
+.spotify-footer {
   background-color: #181818;
   width: 100%;
   font-size: 11px;
@@ -1134,6 +1208,7 @@ ul.list-unstyled li {
   align-items: center;
   overflow-x: hidden;
 }
+
 .playback-progress-container {
   height: 4px;
   position: relative;
@@ -1157,6 +1232,7 @@ input[type="range"].playback-time {
   background-repeat: no-repeat;
   -webkit-appearance: none;
 }
+
 input[type="range"].playback-time:hover {
   background-image: -webkit-gradient(
     linear,
@@ -1170,6 +1246,7 @@ input[type="range"].playback-time:hover {
 }
 input[type="range"].playback-time::-webkit-slider-thumb {
   opacity: 0;
+  left: 0;
   height: 12px;
   width: 12px;
   border: 0;
@@ -1181,7 +1258,10 @@ input[type="range"].playback-time::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 .playback-progress-container:hover input[type="range"]::-webkit-slider-thumb {
-  opacity: 100;
+  opacity: 1;
+}
+.playback-progress-container:focus input[type="range"]::-webkit-slider-thumb {
+  opacity: 1;
 }
 .song-author {
   color: #b3b3b3;

@@ -33,13 +33,16 @@
     <!-- Our Css -->
     <link rel="stylesheet" href="style.css" />  
     <title>Spotify-Clone</title>
-  
+
+    <!-- our script -->
+    <script defer src="script.js"></script>
+
   </head>
   <body>
         <!-- Wako -->
       <div class="container-fluid">
         <div class="row">
-          <nav class="col-md-2 col-lg-2 d-md-block " id="sidebar">
+          <nav class="col-md-3 col-lg-2 d-md-block " id="sidebar">
             <div class="position-sticky pt-3 side-navigation"> 
             <div class="spotifyLogo">
               <a class="nav-link text-secondary" href="#">
@@ -92,13 +95,13 @@
               <a><i class="bi bi-arrow-down-circle"></i> Install App</a>
             </div> 
           </nav>
-        <main class="col-md-9 col-lg-10 " style="margin-left: 238px;">
+        <main class="col-md-9 col-lg-10 " style="margin-left: 238px;height: 100%">
           <div class="container-fluid mt-3 px-0 px-md-3">
             <!---------- Navbar-->
             
-            <div class="row px-4 py-2">
+            <div class="row px-2 py-2">
               
-              <header id="top-navigation-wrapper" class="col-md-9 col-lg-10">
+              <header id="top-navigation-wrapper">
                 <nav  class="top-navigation">
                   <div class="navigation-arrows">
                     <div class="angle-arrows-left mr-2"><i class="fas fa-angle-left" style="font: size 10px;"></i></div>
@@ -118,13 +121,16 @@
             <div class="row px-3 mt-5">
               <h1 class="my-4 top-section-title">Good Morning</h1>
             </div>
-              <div class="row row-cols-2 row-cols-lg-5">
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
                         <div class="col mb-2">
                           <div class="card d-flex welcome-row">
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Burning Jazz-rock Fusion.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Burning Jazz-Rock Fusion</div>
+                              <div class="welcome-albums-caption">
+                                <a href="">Burning Jazz-Rock Fusion</a>
+                                <button type="button" class="button play-btn-md"></button>
+                              </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -132,7 +138,11 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Liked Songs.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Liked Songs</div>
+                              <div class="welcome-albums-caption">
+                                <a href="">Liked Songs</a>
+                                
+                                <button type="button" class="button play-btn-md"></button>
+                              </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -140,7 +150,11 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Metal ballads.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Metal Ballads</div>
+                              <div class="welcome-albums-caption">
+                                <a href="">Metal Ballads</a>
+                                <button type="button" class="button play-btn-md"></button>
+
+                              </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -148,7 +162,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Post human survival.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">POST HUMAN: SURVIVAL</div>
+                              <div class="welcome-albums-caption"><a href="">POST HUMAN: SURVIVAL</a> <button type="button" class="button play-btn-md"></button></div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -156,7 +170,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/This is Joe Bonamassa.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">This is Joe Bonamassa</div>
+                              <div class="welcome-albums-caption"><a href="">This is Joe Bonamassa</a> <button type="button" class="button play-btn-md"></button></div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -164,7 +178,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/This is Midian.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">This is Midian</div>
+                              <div class="welcome-albums-caption"><a href="">This is Midian</a><button type="button" class="button play-btn-md"></button> </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -172,7 +186,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Nymphetamine.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Nymphetamine</div>
+                              <div class="welcome-albums-caption"><a href="">Nymphetamine</a><button type="button" class="button play-btn-md"></button> </div>
                           </div>
                         </div>        
                         <div class="col mb-2">
@@ -180,7 +194,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Amo.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Amo</div>
+                              <div class="welcome-albums-caption"><a href="">Amo</a><button type="button" class="button play-btn-md"></button> </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -188,7 +202,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Le bask.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Le Bask</div>
+                              <div class="welcome-albums-caption"><a href="">Le Bask</a><button type="button" class="button play-btn-md"></button> </div>
                           </div>
                         </div>
                         <div class="col mb-2">
@@ -196,7 +210,7 @@
                             <div class="welcome-card-image">
                               <img class="welcome-image" src="/Assets/Opeth.jpg" alt="">
                             </div>
-                              <div class="welcome-albums-caption">Opeth</div>
+                              <div class="welcome-albums-caption"><a href="">Opeth</a><button type="button" class="button play-btn-md"></button> </div>
                           </div>
                         </div>
               </div>
@@ -209,7 +223,7 @@
           <span class="see-all"><a href="">See all</a> </span>
         </div>      
           <div class="row my-3">
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;"">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem"">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Burning Jazz-rock Fusion.jpg" alt="...">
@@ -220,7 +234,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Metal ballads.jpg" alt="...">
@@ -231,7 +245,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/This is Midian.jpg" alt="...">
@@ -242,7 +256,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Liked Songs.jpg" alt="...">
@@ -253,7 +267,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Le bask.jpg" alt="...">
@@ -264,7 +278,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Post human survival.jpg" alt="...">
@@ -275,7 +289,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/This is Joe Bonamassa.jpg" alt="...">
@@ -286,7 +300,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                          <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                             <div class="other-card">
                               <div class="other-card-img">
                                 <img src="/Assets/Nymphetamine.jpg" alt="...">
@@ -305,13 +319,13 @@
 <div class="row px-3 justify-content-between align-items-end">
   <div>
     <h1 class="top-section-title-secondary">Shows to try</h1>
-    <p style="font-size: 10px;">Podcasts we think you'll get hooked on</p>
+    <p >Podcasts we think you'll get hooked on</p>
   </div>
 
   <span class="see-all"><a href="">See all</a> </span>
 </div>      
   <div class="row my-3">
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;"">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Burning Jazz-rock Fusion.jpg" alt="...">
@@ -322,7 +336,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Metal ballads.jpg" alt="...">
@@ -333,7 +347,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/This is Midian.jpg" alt="...">
@@ -344,7 +358,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Liked Songs.jpg" alt="...">
@@ -355,7 +369,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Le bask.jpg" alt="...">
@@ -366,7 +380,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Post human survival.jpg" alt="...">
@@ -377,7 +391,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/This is Joe Bonamassa.jpg" alt="...">
@@ -388,7 +402,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:12.5rem;">
+                  <div class="col-6 col-md-3 col-lg-1 mb-4" style="min-width:14.5rem; max-height:18.5rem">
                     <div class="other-card">
                       <div class="other-card-img">
                         <img src="/Assets/Nymphetamine.jpg" alt="...">
@@ -415,7 +429,7 @@
  
       <footer>
         <!-- Justas -->
-        <div id="spotify-footer" class="container-fluid">
+        <div class="container-fluid spotify-footer">
           <div
             id="footer-left"
             class="d-flex justify-content-start align-items-center"
@@ -452,6 +466,7 @@
                 <i class="fas fa-step-backward"></i>
               </button>
               <button class="btn-footer btn-footer-play">
+                <!-- <i class="fas fa-pause-circle"></i> -->
                 <i class="fas fa-play-circle" style="font-size: 2rem"></i>
               </button>
               <button class="btn-footer">
@@ -462,20 +477,20 @@
               </button>
             </div>
             <div id="footer-middle-bottom">
-              <span class="mx-2">0:12</span>
+              <span class="mx-2 curent-time"></span>
               <div class="progress playback-progress-container">
                 <input
                   class="playback-time"
                   type="range"
+                  value="1"
                   min="0"
-                  max="100%"
-                  value="40"
-                  style="background-size: 30% 100%"
+                  max="100"
+                  
                 />
-                <button class="volume-bar-slider"></button>
+                <!-- <button class="volume-bar-slider"></button> -->
               </div>
 
-              <span class="mx-2">3:34</span>
+              <span class="mx-2 total-time">3:34</span>
             </div>
           </div>
           <div
@@ -496,7 +511,7 @@
                 class="progress-bar footer-progress-bar"
                 role="progressbar"
                 style="width: 75%"
-                aria-valuenow="25"
+                aria-valuenow="10"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
@@ -521,6 +536,8 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
