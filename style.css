@@ -1383,3 +1383,33 @@ button.track-like:hover i {
   object-fit: cover;
   object-position: center center;
 }
+
+/* edit profile styles */
+
+#edit-profile-page {
+  height: 100vh;
+}
+#edit-profile-page .banner{
+  
+
+}
+
+#edit-profile-page .banner ul {
+  
+  font-weight: 700;
+}
+
+
+
+#edit-profile-page .sidebar{
+  max-width: 400px;
+
+}
+
+#edit-profile-page .form{
+
+}
+
+#edit-profile-page .footer{
+
+}
